@@ -1,3 +1,5 @@
+import { MapUpload } from "@/components/map-upload";
+
 export default function HomePage() {
   return (
     <main className="shell">
@@ -7,12 +9,7 @@ export default function HomePage() {
         <p className="lede">
           Turn map captures into searchable monster intelligence for your alliance.
         </p>
-        <div className="actions">
-          <button type="button" disabled>
-            Upload map capture
-          </button>
-          <span>Scanner wiring is the next implementation step.</span>
-        </div>
+        <MapUpload />
       </section>
       <section className="status-grid" aria-label="MVP pipeline">
         <article><strong>1</strong><span>Capture</span></article>
